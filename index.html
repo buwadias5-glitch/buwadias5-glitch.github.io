@@ -1,90 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buwanaji Dias Nagahawatte - e-Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; }
-        header { background: #2c3e50; color: #fff; padding: 30px; text-align: center; border-radius: 8px; }
-        section { background: #fff; margin: 20px 0; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        h1, h2 { color: #2c3e50; }
-        header h1 { color: #fff; margin-bottom: 10px; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        .contact-info { font-weight: bold; color: #2980b9; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buwanaji Dias Nagahawatte | Biotechnology Student E-Portfolio</title>
+<meta name="description" content="E-portfolio of Buwanaji Dias Nagahawatte, BSc (Hons) in Biotechnology undergraduate at SLIIT.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0b2a5b;--blue:#1d5fd1;--sky:#eaf2ff;--line:#cfdcf2;--ink:#14213d;--muted:#52627f}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.0625rem;line-height:1.65;color:var(--ink);background:#fff}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
+nav{position:sticky;top:0;z-index:5;background:var(--navy)}
+nav .wrap{display:flex;gap:1.25rem;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:.8rem;padding-bottom:.8rem}
+nav strong{font-family:"Bricolage Grotesque",sans-serif;color:#fff;margin-right:auto}
+nav a{color:#cfe0ff;text-decoration:none;font-size:.95rem}
+nav a:hover{color:#fff;text-decoration:underline}
+.hero{color:#fff;padding:3.5rem 0 4rem;background:linear-gradient(135deg,#0b2a5b 0%,#1d5fd1 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;align-items:center}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:800}
+.hero p{color:#e3eeff;max-width:34rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.btn{display:inline-block;padding:.65rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:600;border:2px solid #fff;color:#fff}
+.btn.primary{background:#fff;border-color:#fff;color:var(--navy)}
+.btn:hover{filter:brightness(.92)}
+.dish{position:relative;width:min(100%,320px);aspect-ratio:1;margin:0 auto;border-radius:50%;border:6px solid #fff;background:radial-gradient(circle at 35% 30%,#7fb0ff,#2a6fe0 70%);overflow:hidden;box-shadow:0 0 0 10px rgba(255,255,255,.2)}
+.dish svg{position:absolute;inset:0;width:100%;height:100%}
+.dish img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:3.2rem 0;background:#fff}
+section.alt{background:var(--sky);border-block:1px solid var(--line)}
+section h2{font-size:1.9rem;margin-bottom:1.4rem;padding-left:.9rem;border-left:6px solid var(--blue);color:var(--navy)}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1.2rem 1.4rem}
+.card+.card{margin-top:1rem}
+.card h3{font-size:1.15rem;color:var(--navy)}
+.meta{color:var(--muted);font-size:.95rem;margin:.15rem 0 .5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
+.grid .card+.card{margin-top:0}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none}
+.tags li{background:var(--sky);border:1px solid var(--line);color:var(--navy);border-radius:999px;padding:.25rem .8rem;font-size:.95rem}
+section.alt .tags li{background:#fff}
+ul.plain{margin:.4rem 0 0;padding-left:1.2rem}
+.contact dl{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.25rem;margin:0}
+.contact dt{font-weight:600}.contact dd{margin:0}
+.btn.dl{background:var(--blue);border-color:var(--blue);color:#fff}
+footer{background:var(--navy);color:#cfe0ff;text-align:center;padding:1.5rem 1rem;font-size:.95rem}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr}.dish{order:-1;width:220px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
+<nav aria-label="Main">
+  <div class="wrap">
+    <strong>Buwanaji Nagahawatte</strong>
+    <a href="#about">About</a><a href="#education">Education</a><a href="#projects">Projects</a>
+    <a href="#awards">Awards</a><a href="#skills">Skills</a><a href="#hobbies">Hobbies</a>
+    <a href="#resume">Resume</a><a href="#contact">Contact</a>
+  </div>
+</nav>
 
-    <header>
-        <h1>Buwanaji Dias Nagahawatte</h1>
-        <p>BSc (Hons) in Biotechnology Undergraduate</p>
-    </header>
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Buwanaji Dias Nagahawatte</h1>
+      <p>BSc (Hons) in Biotechnology undergraduate at SLIIT, aiming for a career in biotechnology product management and commercialisation.</p>
+      <div class="btns">
+        <a class="btn primary" href="assets/resume.pdf" download>Download my resume (PDF)</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="dish" role="img" aria-label="Decorative circle with a profile photo">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="#fff" opacity=".3"><circle cx="22" cy="30" r="5"/><circle cx="30" cy="38" r="3"/><circle cx="75" cy="25" r="4"/><circle cx="80" cy="70" r="6"/><circle cx="25" cy="75" r="4"/><circle cx="60" cy="85" r="3"/></g></svg>
+      <img src="assets/photo.jpg" alt="Portrait of Buwanaji Dias Nagahawatte" onerror="this.style.display='none'">
+    </div>
+  </div>
+</header>
 
-    <section>
-        <h2>About Me</h2>
-        <p>I am a biotechnology undergraduate student from SLIIT. I am passionate in life sciences and I would like to pursue a career in biotechnology product management and commercialisation. I am excited to improve the skills needed for cross-functional collaboration, brand strategy, and market research to help successfully develop and launch biotech products to market.</p>
-    </section>
+<main>
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="card">
+      <p>I am a Biotechnology undergraduate at the Sri Lanka Institute of Information Technology (SLIIT), and I am passionate about the life sciences. I would like to pursue a career in biotechnology product management and commercialisation. I am keen to build the skills needed for cross-functional collaboration, brand strategy, and market research, so that I can help develop biotech products and launch them successfully to market.</p>
+    </div>
+  </div>
+</section>
 
-    <section>
-        <h2>Educational Qualifications</h2>
-        <ul>
-            <li><strong>BSc (Hons) in Biotechnology</strong> — SLIIT, Sri Lanka (Currently pursuing - Year 1, Semester 1)</li>
-            <li><strong>GCE Advanced Level (A/L)</strong> — Sujatha Vidyalaya, Matara. Bio Science stream (Biology, Chemistry, Physics) - Passed 2024, 2025</li>
-            <li><strong>GCE Ordinary Level (O/L)</strong> — Sujatha Vidyalaya, Matara. Passed 9 A's, English Medium - 2021</li>
-        </ul>
-    </section>
+<section id="education" class="alt">
+  <div class="wrap">
+    <h2>Education and professional qualifications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Higher education</h3>
+        <p><strong>BSc (Hons) in Biotechnology</strong><br>SLIIT, Sri Lanka</p>
+        <p class="meta">Currently pursuing, Year 1 Semester 1</p>
+      </div>
+      <div class="card">
+        <h3>Secondary education</h3>
+        <p><strong>GCE Advanced Level, Bio Science stream</strong><br>Sujatha Vidyalaya, Matara</p>
+        <p class="meta">Biology, Chemistry, Physics. Sat 2024, passed 2025.</p>
+        <p><strong>GCE Ordinary Level, English Medium</strong><br>Sujatha Vidyalaya, Matara</p>
+        <p class="meta">9 A passes, 2021</p>
+      </div>
+      <div class="card">
+        <h3>Professional qualifications</h3>
+        <p><strong>CIMA Certificate in Business Accounting</strong> (Fundamental level)</p>
+        <p class="meta">Currently studying. Exams not yet sat.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section>
-        <h2>Professional Qualifications</h2>
-        <ul>
-            <li><strong>CIMA Certificate in Business Accounting</strong> (Fundamental level), currently studying - exams not yet sat.</li>
-        </ul>
-    </section>
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects and leadership</h2>
+    <div class="card">
+      <h3>Head Prefect, Sujatha Vidyalaya, Matara</h3>
+      <p class="meta">Academic year 2023</p>
+      <p>Led the prefect guild for a school of more than 5,000 students, coordinated the prefects' blood donation programme in 2023, and organised major school events.</p>
+    </div>
+    <div class="card">
+      <h3>Director of Entertainment, Apex Institution Student Club</h3>
+      <p class="meta">2026</p>
+      <p>Directed event planning and promotional strategy.</p>
+    </div>
+    <div class="card">
+      <h3>Swarnawarna Medalist and Environment Leader</h3>
+      <p class="meta">2016 to 2019</p>
+      <p>Coordinated beach cleanup drives.</p>
+    </div>
+    <div class="card">
+      <h3>Other school roles</h3>
+      <ul class="plain">
+        <li>Deputy Head Prefect, Primary School, Sujatha Vidyalaya (2015)</li>
+        <li>English Announcer and member of the school Eastern Band</li>
+        <li>Member of the Media, Stamp, and Dancing Societies</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <section>
-        <h2>Leadership Roles & Extracurricular Activities</h2>
-        <ul>
-            <li><strong>Head Prefect</strong> — Sujatha Vidyalaya, Matara (Academic Year 2023): Led the student prefect guild of more than 5,000 students, coordinated school prefects' blood donation (2023), and organized major school events.</li>
-            <li><strong>Director of Entertainment</strong> — Apex Institution Student Club (2026): Directed event planning and promotional strategy.</li>
-            <li><strong>Swarnawarna Medalist (Environment Leader)</strong> — Coordinated beach cleanup drives (2016–2019).</li>
-            <li><strong>Deputy Head Prefect</strong> — Primary School, Sujatha Vidyalaya, Matara (2015).</li>
-            <li><strong>Member of the school Eastern Band</strong></li>
-            <li><strong>English Announcer</strong> — Sujatha Vidyalaya, Matara</li>
-            <li><strong>School Societies:</strong> Media, Stamp, and Dancing Societies</li>
-        </ul>
-    </section>
+<section id="awards" class="alt">
+  <div class="wrap">
+    <h2>Awards</h2>
+    <div class="card">
+      <ul class="plain">
+        <li><strong>National Orchestra Competition (2022):</strong> 2nd place and the "Best Shastriya" title</li>
+        <li><strong>Provincial 2nd place:</strong> National English Day Impromptu Speech (2024) and Drama (2018)</li>
+        <li><strong>Provincial 2nd place:</strong> National Music and Singing Competition (2018)</li>
+        <li><strong>Provincial 2nd place</strong> in consecutive years from 2017 to 2020, and <strong>Zonal 2nd place</strong> in 2021</li>
+        <li><strong>Zonal 2nd place:</strong> English Recitation (2018). <strong>Zonal 4th place:</strong> Tamil Reading (2017)</li>
+        <li><strong>Multiple event wins:</strong> Inter-School Sports Meet</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <section>
-        <h2>Awards & Certifications</h2>
-        <ul>
-            <li><strong>National-Level Orchestra Competition:</strong> 2nd place, awarded "Best Shastriya" title (2022)</li>
-            <li><strong>Provincial 2nd Place:</strong> National English Day Impromptu Speech (2024) & Drama Competitions (2018)</li>
-            <li><strong>Provincial 2nd Place:</strong> National Level Music/Singing Competition (2018)</li>
-            <li><strong>Provincial 2nd Place (Consecutive):</strong> 2017–2020; Zonal 2nd Place (2021)</li>
-            <li><strong>Zonal 2nd Place:</strong> English Recitation (2018); Zonal 4th Place: Tamil Reading Competition (2017)[span_19]</li>
-            <li><strong>Multiple Winning Event Awards:</strong> Inter-School Sport Meet</li>
-        </ul>
-    </section>
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>Technical</h3>
+        <ul class="tags"><li>MS Word</li><li>MS Excel</li><li>MS PowerPoint</li><li>MS Access</li><li>Canva</li><li>Generative AI tools</li></ul></div>
+      <div class="card"><h3>Laboratory</h3>
+        <ul class="tags"><li>Titration</li><li>Microscopy</li><li>Sample preparation</li><li>Lab safety protocols</li><li>A/L science practicals</li></ul></div>
+      <div class="card"><h3>Languages</h3>
+        <ul class="tags"><li>Sinhala (native)</li><li>English (fluent)</li><li>Tamil (basic)</li></ul>
+        <p class="meta">A passes in English at O/L 2021 and A/L 2025.</p></div>
+    </div>
+  </div>
+</section>
 
-    <section>
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Technical Proficiency:</strong> MS Word, MS Excel, MS PowerPoint, MS Access, Canva, Generative AI tools</li>
-            <li><strong>Lab Skills:</strong> Basic laboratory techniques (titration, microscopy, sample preparation, lab safety protocols) & A/L science practicals[span_22](start_span)[span_22](end_span)</li>
-            <li><strong>Languages:</strong> Sinhala (Native); English (Fluent - A pass at both OL-2021 and AL-2025); Tamil (Basic)(end_span)</li>
-        </ul>
-    </section>
+<section id="hobbies" class="alt">
+  <div class="wrap">
+    <h2>Hobbies</h2>
+    <ul class="tags"><li>Music and singing</li><li>Orchestra and band</li><li>Dancing</li><li>Drama</li><li>Public speaking</li><li>Stamp collecting</li></ul>
+  </div>
+</section>
 
-    <section>
-        <h2>Contact Details</h2>
-        <p class="contact-info">
-            Email: buwanajinagahawatte05@gmail.com(end_span)<br>
-            Phone: +94 702405040)<br>
-            Address: 361/1L, Kumarathunga Mawatha, Matara
-        </p>
-    </section>
+<section id="resume">
+  <div class="wrap">
+    <h2>Resume</h2>
+    <div class="card">
+      <p>My resume is available to download as a PDF.</p>
+      <a class="btn dl" href="assets/resume.pdf" download>Download resume (PDF)</a>
+    </div>
+  </div>
+</section>
 
+<section id="contact" class="alt contact">
+  <div class="wrap">
+    <h2>Contact details</h2>
+    <div class="card">
+      <dl>
+        <dt>Email</dt><dd><a href="mailto:buwanajinagahawatte05@gmail.com">buwanajinagahawatte05@gmail.com</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>&copy; 2026 Buwanaji Dias Nagahawatte. Built with HTML, CSS, and GitHub Pages for SC1172.</footer>
 </body>
 </html>
