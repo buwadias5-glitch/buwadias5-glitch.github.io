@@ -9,47 +9,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#050b1a;--royal:#0b2a7a;--card:#0d1830;--blue:#2f6bff;--accent:#5cc8ff;--link:#8ccbff;--line:#2a5bd6;--white:#ffffff}
+:root{--dark:#3a230c;--mid:#724518;--tan:#cbbfa9;--card:#4b2f14;--white:#ffffff}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:70px}
-body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.0625rem;line-height:1.65;color:var(--white);background:var(--bg)}
+body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;font-size:1.0625rem;line-height:1.65;color:var(--white);background:var(--dark)}
 h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.15;margin:0}
-a{color:var(--link)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem}
-nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:2px solid var(--blue)}
+a{color:var(--tan)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--tan);outline-offset:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 1.25rem;position:relative;z-index:1}
+nav{position:sticky;top:0;z-index:5;background:var(--dark);border-bottom:3px solid var(--mid)}
 nav .wrap{display:flex;gap:1.25rem;align-items:center;overflow-x:auto;white-space:nowrap;padding-top:.8rem;padding-bottom:.8rem}
 nav strong{font-family:"Bricolage Grotesque",sans-serif;color:var(--white);margin-right:auto}
 nav a{color:var(--white);text-decoration:none;font-size:.95rem}
-nav a:hover{color:var(--accent);text-decoration:underline}
-.hero{color:var(--white);padding:3.5rem 0 4rem;background:linear-gradient(135deg,#1747ff 0%,var(--royal) 50%,var(--bg) 100%)}
+nav a:hover{color:var(--tan);text-decoration:underline}
+.hero{position:relative;overflow:hidden;color:var(--white);padding:3.5rem 0 4rem;background:radial-gradient(circle at 78% 30%,#683f16 0%,var(--dark) 62%)}
+.helix{position:absolute;right:4%;top:0;height:100%;width:auto;opacity:.22;pointer-events:none}
 .hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:2.5rem;align-items:center}
-.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:800}
-.hero p{color:var(--white);max-width:34rem}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);font-weight:800;text-transform:uppercase;letter-spacing:.02em}
+.hero p{color:var(--tan);max-width:34rem;font-size:1.15rem}
 .btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
-.btn{display:inline-block;padding:.65rem 1.2rem;border-radius:6px;text-decoration:none;font-weight:600;border:2px solid var(--white);color:var(--white)}
-.btn.primary{background:var(--white);border-color:var(--white);color:var(--royal)}
-.btn.dl{background:var(--blue);border-color:var(--blue);color:var(--white)}
+.btn{display:inline-block;padding:.65rem 1.2rem;border-radius:4px;text-decoration:none;font-weight:600;border:2px solid var(--tan);color:var(--white)}
+.btn.primary{background:var(--tan);border-color:var(--tan);color:var(--dark)}
 .btn:hover{text-decoration:underline}
-.dish{position:relative;width:min(100%,320px);aspect-ratio:1;margin:0 auto;border-radius:50%;border:6px solid var(--white);background:var(--blue);overflow:hidden;box-shadow:0 0 0 10px rgba(92,200,255,.35),0 0 50px rgba(47,107,255,.6)}
-.dish svg{position:absolute;inset:0;width:100%;height:100%}
-.dish img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-section{padding:3.2rem 0;background:var(--bg);color:var(--white)}
-section.alt{background:linear-gradient(180deg,var(--royal),#0a3aa8)}
-section h2{font-size:1.9rem;margin-bottom:1.4rem;padding-left:.9rem;border-left:6px solid var(--accent)}
-.card{background:var(--card);color:var(--white);border:1px solid var(--line);border-radius:10px;padding:1.2rem 1.4rem;box-shadow:0 8px 24px rgba(47,107,255,.2)}
+.dish{position:relative;width:min(100%,320px);aspect-ratio:1;margin:0 auto;border-radius:50%;border:6px solid var(--tan);background:var(--mid);overflow:hidden;box-shadow:0 0 0 10px rgba(114,69,24,.7)}
+.dish img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%}
+section{padding:3.2rem 0;background:var(--dark);color:var(--white)}
+section.alt{background:var(--tan);color:var(--dark)}
+section h2{display:inline-block;font-size:1.5rem;margin-bottom:1.4rem;padding:.45rem 1.4rem;background:var(--mid);color:var(--white);border-radius:4px}
+.card{background:var(--card);color:var(--white);border:1px solid var(--mid);border-radius:8px;padding:1.2rem 1.4rem;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 .card+.card{margin-top:1rem}
-.card h3{font-size:1.15rem;color:var(--accent)}
+.card h3{font-size:1.15rem;color:var(--tan)}
 .meta{opacity:.85;font-size:.95rem;margin:.15rem 0 .5rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
 .grid .card+.card{margin-top:0}
+.ico{width:46px;height:46px;margin-bottom:.6rem;fill:none;stroke:var(--tan);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .tags{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none}
-.tags li{background:var(--blue);border:1px solid var(--accent);color:var(--white);border-radius:999px;padding:.2rem .8rem;font-size:.95rem}
+.tags li{background:var(--mid);border:1px solid var(--tan);color:var(--white);border-radius:999px;padding:.2rem .8rem;font-size:.95rem}
 ul.plain{margin:.4rem 0 0;padding-left:1.2rem}
 .contact dl{display:grid;grid-template-columns:max-content 1fr;gap:.5rem 1.25rem;margin:0}
 .contact dt{font-weight:600}.contact dd{margin:0}
-footer{background:linear-gradient(90deg,var(--bg),var(--royal));border-top:2px solid var(--blue);color:var(--white);text-align:center;padding:1.5rem 1rem;font-size:.95rem}
-@media(max-width:720px){.hero .wrap{grid-template-columns:1fr}.dish{order:-1;width:220px}}
+footer{background:var(--dark);border-top:3px solid var(--mid);color:var(--white);text-align:center;padding:1.5rem 1rem;font-size:.95rem}
+@media(max-width:720px){.hero .wrap{grid-template-columns:1fr}.dish{order:-1;width:220px}.helix{opacity:.12}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
@@ -64,6 +64,7 @@ footer{background:linear-gradient(90deg,var(--bg),var(--royal));border-top:2px s
 </nav>
 
 <header class="hero">
+  <svg class="helix" viewBox="0 0 120 480" aria-hidden="true" fill="none" stroke="#cbbfa9" stroke-width="3" stroke-linecap="round"><path d="M60 0C110 40 110 80 60 120S10 200 60 240S110 320 60 360S10 440 60 480"/><path d="M60 0C10 40 10 80 60 120S110 200 60 240S10 320 60 360S110 440 60 480"/><path stroke-width="2" d="M41 20h38M28 40h64M23 60h74M28 80h64M41 100h38M41 140h38M28 160h64M23 180h74M28 200h64M41 220h38M41 260h38M28 280h64M23 300h74M28 320h64M41 340h38M41 380h38M28 400h64M23 420h74M28 440h64M41 460h38"/></svg>
   <div class="wrap">
     <div>
       <h1>Buwanaji Dias Nagahawatte</h1>
@@ -73,8 +74,7 @@ footer{background:linear-gradient(90deg,var(--bg),var(--royal));border-top:2px s
         <a class="btn" href="#contact">Contact me</a>
       </div>
     </div>
-    <div class="dish" role="img" aria-label="Decorative circle with a profile photo">
-      <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="#fff" opacity=".3"><circle cx="22" cy="30" r="5"/><circle cx="30" cy="38" r="3"/><circle cx="75" cy="25" r="4"/><circle cx="80" cy="70" r="6"/><circle cx="25" cy="75" r="4"/><circle cx="60" cy="85" r="3"/></g></svg>
+    <div class="dish" role="img" aria-label="Profile photo">
       <img src="assets/photo.jpg" alt="Portrait of Buwanaji Dias Nagahawatte" onerror="this.style.display='none'">
     </div>
   </div>
@@ -153,18 +153,22 @@ footer{background:linear-gradient(90deg,var(--bg),var(--royal));border-top:2px s
     <h2>My projects</h2>
     <div class="grid">
       <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="34" cy="13" r="6"/><path d="M4 28c5-5 10-5 14 0s10 5 14 0 10-5 12 0M4 38c5-5 10-5 14 0s10 5 14 0 10-5 12 0"/></svg>
         <h3>Beach cleaning programmes</h3>
         <p>I have taken part in and coordinated many beach cleanup drives, including as an Environment Leader and Swarnawarna Medalist from 2016 to 2019.</p>
       </div>
       <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5c11 8 13 19 0 27C11 24 13 13 24 5zM24 14v30M24 24l-6-5M24 28l6-5"/></svg>
         <h3>Reforestation programmes</h3>
         <p>I have helped with tree planting and reforestation programmes to support the environment.</p>
       </div>
       <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5c9 11 13 17 13 24a13 13 0 0 1-26 0c0-7 4-13 13-24zM24 24v10M19 29h10"/></svg>
         <h3>Blood donation campaigns</h3>
         <p>I organised blood donation campaigns, including the school prefects' blood donation programme in 2023.</p>
       </div>
       <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l5.5 11.5L42 19l-9 8.5 2.2 12.5L24 34l-11.2 6 2.2-12.5L6 19l12.5-1.5z"/></svg>
         <h3>School events</h3>
         <p>I organised many school events as Head Prefect, and I direct event planning and promotion as Director of Entertainment at the Apex Institution Student Club.</p>
       </div>
