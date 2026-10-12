@@ -68,4 +68,219 @@ footer{background:var(--soft);border-top:1px solid var(--line);color:var(--muted
 </style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></symbol><symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol><symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13L7 22l5-3 5 3-1.5-9"/></symbol><symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V3M7.5 15h9"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v6a4 4 0 0 1-8 0zM8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4M12 14v4M8 21h8M10 18h4"/></symbol><symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 20h20"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5.5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 5.5-8 11-8 11z"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol><symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 5a3.5 3.5 0 0 1 0 7M18 14c2.4.6 3.5 2.6 3.5 6"/></symbol><symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol><symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></symbol><symbol id="i-mask" viewBox="0 0 24 24"><path d="M4 5c4 1 12 1 16 0v7c0 5-3.5 8-8 8s-8-3-8-8z"/><path d="M8.5 10h.01M15.5 10h.01M8.5 15c2 2 5 2 7 0"/></symbol><symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol><symbol id="i-stamp" viewBox="0 0 24 24"><path d="M8 3h8v7l3 3v3H5v-3l3-3zM5 21h14"/></symbol><symbol id="i-book"
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></symbol><symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5M22 9v6"/></symbol><symbol id="i-medal" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13L7 22l5-3 5 3-1.5-9"/></symbol><symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6L4.5 19a2 2 0 0 0 1.8 3h11.4a2 2 0 0 0 1.8-3L14 9V3M7.5 15h9"/></symbol><symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v6a4 4 0 0 1-8 0zM8 6H4v2a4 4 0 0 0 4 4M16 6h4v2a4 4 0 0 1-4 4M12 14v4M8 21h8M10 18h4"/></symbol><symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 20h20"/></symbol><symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5.5-8-11a4.5 4.5 0 0 1 8-2.5A4.5 4.5 0 0 1 20 10c0 5.5-8 11-8 11z"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l5 5v13H6z"/><path d="M14 3v5h5M9 13h7M9 17h7"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol><symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol><symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 5a3.5 3.5 0 0 1 0 7M18 14c2.4.6 3.5 2.6 3.5 6"/></symbol><symbol id="i-music" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></symbol><symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"/></symbol><symbol id="i-mask" viewBox="0 0 24 24"><path d="M4 5c4 1 12 1 16 0v7c0 5-3.5 8-8 8s-8-3-8-8z"/><path d="M8.5 10h.01M15.5 10h.01M8.5 15c2 2 5 2 7 0"/></symbol><symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"/></symbol><symbol id="i-stamp" viewBox="0 0 24 24"><path d="M8 3h8v7l3 3v3H5v-3l3-3zM5 21h14"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5h7c1.5 0 2 .8 2 2v13c0-1-.8-1.5-2-1.5H3zM21 5h-7c-1.5 0-2 .8-2 2v13c0-1 .8-1.5 2-1.5h7z"/></symbol><symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol></defs></svg>
+<nav aria-label="Main">
+  <div class="wrap">
+    <strong>Buwanaji Nagahawatte</strong>
+    <a href="#about">About</a><a href="#education">Education</a><a href="#leadership">Leadership</a><a href="#projects">My projects</a>
+    <a href="#awards">Awards</a><a href="#skills">Skills</a><a href="#hobbies">Hobbies</a>
+    <a href="#resume">Resume</a><a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <svg class="helix" viewBox="0 0 120 480" aria-hidden="true" fill="none" stroke-width="3" stroke-linecap="round"><path d="M60 0C110 40 110 80 60 120S10 200 60 240S110 320 60 360S10 440 60 480"/><path d="M60 0C10 40 10 80 60 120S110 200 60 240S10 320 60 360S110 440 60 480"/><path stroke-width="2" d="M41 20h38M28 40h64M23 60h74M28 80h64M41 100h38M41 140h38M28 160h64M23 180h74M28 200h64M41 220h38M41 260h38M28 280h64M23 300h74M28 320h64M41 340h38M41 380h38M28 400h64M23 420h74M28 440h64M41 460h38"/></svg>
+  <div class="wrap">
+    <div>
+      <h1>Buwanaji Dias Nagahawatte</h1>
+      <p>BSc (Hons) in Biotechnology undergraduate at SLIIT, aiming for a career in biotechnology product management and commercialisation.</p>
+      <div class="btns">
+        <a class="btn primary" href="assets/resume.pdf" download>Download my resume (PDF)</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="dish" role="img" aria-label="Profile photo">
+      <img src="assets/photo.jpg" alt="Portrait of Buwanaji Dias Nagahawatte" onerror="this.style.display='none'">
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-user"/></svg>About me</h2>
+    <div class="card">
+      <p>I am a Biotechnology undergraduate at the Sri Lanka Institute of Information Technology (SLIIT), and I am passionate about the life sciences. I would like to pursue a career in biotechnology product management and commercialisation. I am keen to build the skills needed for cross-functional collaboration, brand strategy, and market research, so that I can help develop biotech products and launch them successfully to market.</p>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="alt">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg>Education and professional qualifications</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg>Higher education</h3>
+        <p><strong>BSc (Hons) in Biotechnology</strong><br>SLIIT, Sri Lanka</p>
+        <p class="meta">Currently pursuing, Year 1 Semester 1</p>
+      </div>
+      <div class="card">
+        <h3><svg class="i" aria-hidden="true"><use href="#i-book"/></svg>Secondary education</h3>
+        <p><strong>GCE Advanced Level, Bio Science stream</strong><br>Sujatha Vidyalaya, Matara</p>
+        <p class="meta">Biology, Chemistry, Physics. Passed 2024, 2025.</p>
+        <p><strong>GCE Ordinary Level, English Medium</strong><br>Sujatha Vidyalaya, Matara</p>
+        <p class="meta">9 A passes, 2021</p>
+      </div>
+      <div class="card">
+        <h3><svg class="i" aria-hidden="true"><use href="#i-case"/></svg>Professional qualifications</h3>
+        <p><strong>CIMA Certificate in Business Accounting</strong> (Fundamental level)</p>
+        <p class="meta">Currently studying. Exams not yet sat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="leadership">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg>Leadership roles</h2>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg>Head Prefect, Sujatha Vidyalaya, Matara</h3>
+      <p class="meta">Academic year 2023</p>
+      <p>Led the prefect guild for a school of more than 5,000 students, coordinated the prefects' blood donation programme in 2023, and organised major school events.</p>
+    </div>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg>Director of Entertainment, Apex Institution Student Club</h3>
+      <p class="meta">2026</p>
+      <p>Directed event planning and promotional strategy.</p>
+    </div>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg>Swarnawarna Medalist and Environment Leader</h3>
+      <p class="meta">2016 to 2019</p>
+      <p>Coordinated beach cleanup drives.</p>
+    </div>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg>Active member, Leo Club of Matara</h3>
+      <p>Working on community service projects.</p>
+    </div>
+    <div class="card">
+      <h3><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg>Other school roles</h3>
+      <ul class="plain">
+        <li>Deputy Head Prefect, Primary School, Sujatha Vidyalaya (2015)</li>
+        <li>English Announcer and member of the school Eastern Band</li>
+        <li>Member of the Media, Stamp, and Dancing Societies</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="alt">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-flask"/></svg>My projects</h2>
+    <h3 class="sub">Biotechnology projects</h3>
+    <div class="grid">
+      <div class="card">
+        <svg class="i" aria-hidden="true"><use href="#i-people"/></svg>
+        <h3>Group presentation: Purple Biotechnology</h3>
+        <ul class="tags"><li>Teamwork</li><li>Research</li><li>Presentation skills</li><li>Collaboration</li></ul>
+        <p><a href="https://shehan-ai.github.io/portfolio/#assignments" target="_blank" rel="noopener">Full details and reflection</a></p>
+      </div>
+      <div class="card">
+        <svg class="i" aria-hidden="true"><use href="#i-flask"/></svg>
+        <h3>Educational video: Mycelium Leather</h3>
+        <ul class="tags"><li>Science communication</li><li>Scriptwriting</li><li>Video production</li><li>Coordination</li></ul>
+        <p><a href="https://shehan-ai.github.io/portfolio/#assignments" target="_blank" rel="noopener">Full details and reflection</a></p>
+      </div>
+      <div class="card">
+        <svg class="i" aria-hidden="true"><use href="#i-book"/></svg>
+        <h3>Career study: my biotechnology role model</h3>
+        <ul class="tags"><li>Time management</li><li>Research</li><li>Career planning</li><li>Resilience</li></ul>
+        <p><a href="https://shehan-ai.github.io/portfolio/#assignments" target="_blank" rel="noopener">Full details and reflection</a></p>
+      </div>
+      <div class="card">
+        <svg class="i" aria-hidden="true"><use href="#i-mic"/></svg>
+        <h3>Bioethics debate: consumer DNA databases</h3>
+        <ul class="tags"><li>Public speaking</li><li>Critical thinking</li><li>Bioethics</li><li>Persuasion</li></ul>
+        <p><a href="https://shehan-ai.github.io/portfolio/#assignments" target="_blank" rel="noopener">Full details and reflection</a></p>
+      </div>
+    </div>
+    <h3 class="sub second">Community and leadership projects</h3>
+    <div class="grid">
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><circle cx="34" cy="13" r="6"/><path d="M4 28c5-5 10-5 14 0s10 5 14 0 10-5 12 0M4 38c5-5 10-5 14 0s10 5 14 0 10-5 12 0"/></svg>
+        <h3>Beach cleaning programmes</h3>
+        <p>I have taken part in and coordinated many beach cleanup drives, including as an Environment Leader and Swarnawarna Medalist from 2016 to 2019.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5c11 8 13 19 0 27C11 24 13 13 24 5zM24 14v30M24 24l-6-5M24 28l6-5"/></svg>
+        <h3>Reforestation programmes</h3>
+        <p>I have helped with tree planting and reforestation programmes to support the environment.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5c9 11 13 17 13 24a13 13 0 0 1-26 0c0-7 4-13 13-24zM24 24v10M19 29h10"/></svg>
+        <h3>Blood donation campaigns</h3>
+        <p>I organised blood donation campaigns, including the school prefects' blood donation programme in 2023.</p>
+      </div>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6l5.5 11.5L42 19l-9 8.5 2.2 12.5L24 34l-11.2 6 2.2-12.5L6 19l12.5-1.5z"/></svg>
+        <h3>School events</h3>
+        <p>I organised many school events as Head Prefect, and I direct event planning and promotion as Director of Entertainment at the Apex Institution Student Club.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg>Awards</h2>
+    <div class="card">
+      <ul class="plain aw">
+        <li><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg><strong>National Orchestra Competition (2022):</strong> 2nd place and the "Best Shastriya" title</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg><strong>Provincial 2nd place:</strong> National English Day Impromptu Speech (2024) and Drama (2018)</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg><strong>Provincial 2nd place:</strong> National Music and Singing Competition (2018)</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg><strong>Provincial 2nd place</strong> in consecutive years from 2017 to 2020, and <strong>Zonal 2nd place</strong> in 2021</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg><strong>Zonal 2nd place:</strong> English Recitation (2018). <strong>Zonal 4th place:</strong> Tamil Reading (2017)</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg><strong>Multiple event wins:</strong> Inter-School Sports Meet</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="alt">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-laptop"/></svg>Skills</h2>
+    <div class="grid">
+      <div class="card"><h3><svg class="i" aria-hidden="true"><use href="#i-laptop"/></svg>Technical</h3>
+        <ul class="tags"><li>MS Word</li><li>MS Excel</li><li>MS PowerPoint</li><li>MS Access</li><li>Canva</li><li>Generative AI tools</li></ul></div>
+      <div class="card"><h3><svg class="i" aria-hidden="true"><use href="#i-flask"/></svg>Laboratory</h3>
+        <ul class="tags"><li>Titration</li><li>Microscopy</li><li>Sample preparation</li><li>Lab safety protocols</li><li>A/L science practicals</li></ul></div>
+      <div class="card"><h3><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg>Languages</h3>
+        <ul class="tags"><li>Sinhala (native)</li><li>English (fluent)</li><li>Tamil (basic)</li></ul>
+        <p class="meta">A passes in English at O/L 2021 and A/L 2025.</p></div>
+      <div class="card"><h3><svg class="i" aria-hidden="true"><use href="#i-people"/></svg>Personal</h3>
+        <ul class="tags"><li>Communication</li><li>Teamwork</li><li>Problem solving</li><li>Time management</li><li>Presentation skills</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="hobbies">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-heart"/></svg>Hobbies</h2>
+    <ul class="tags"><li><svg class="i" aria-hidden="true"><use href="#i-music"/></svg>Music and singing</li><li><svg class="i" aria-hidden="true"><use href="#i-music"/></svg>Orchestra and band</li><li><svg class="i" aria-hidden="true"><use href="#i-spark"/></svg>Dancing</li><li><svg class="i" aria-hidden="true"><use href="#i-mask"/></svg>Drama</li><li><svg class="i" aria-hidden="true"><use href="#i-mic"/></svg>Public speaking</li><li><svg class="i" aria-hidden="true"><use href="#i-stamp"/></svg>Stamp collecting</li></ul>
+  </div>
+</section>
+
+<section id="resume" class="alt">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-file"/></svg>Resume</h2>
+    <div class="card">
+      <p>My resume is available to download as a PDF.</p>
+      <a class="btn primary" href="assets/resume.pdf" download>Download resume (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Contact details</h2>
+    <div class="card">
+      <dl>
+        <dt><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Email</dt><dd><a href="mailto:buwanajinagahawatte05@gmail.com">buwanajinagahawatte05@gmail.com</a></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>&copy; 2026 Buwanaji Dias Nagahawatte. Built with HTML, CSS, and GitHub Pages for SC1172.</footer>
+</body>
+</html>
