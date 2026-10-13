@@ -38,14 +38,14 @@ This is my personal e-portfolio. It presents my education, leadership roles, pro
 | `index.html` | The portfolio website (HTML and CSS) |
 | `cv.jpeg` | My profile photograph |
 | `RESUME ASSIGNMENT PDF.pdf` | My downloadable resume |
-| `Portfolio%20screenshot.1.jpeg` | Screenshot of the live website |
+| `Portfolio screenshot.1.jpeg` | Screenshot of the live website |
 | `README.md` | This documentation |
 
 ## Screenshot
 
 Full-page screenshot of the live portfolio website:
 
-![Full portfolio website](screenshot.jpeg)
+![Full portfolio website](Portfolio%20screenshot.1.jpeg)
 
 ## How to view it
 
