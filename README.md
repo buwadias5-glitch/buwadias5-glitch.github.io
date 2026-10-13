@@ -38,7 +38,7 @@ This is my personal e-portfolio. It presents my education, leadership roles, pro
 | `index.html` | The portfolio website (HTML and CSS) |
 | `cv.jpeg` | My profile photograph |
 | `RESUME ASSIGNMENT PDF.pdf` | My downloadable resume |
-| `screenshot.jpeg` | Screenshot of the live website |
+| `Portfolio screenshot.1.jpeg` | Screenshot of the live website |
 | `README.md` | This documentation |
 
 ## Screenshot
